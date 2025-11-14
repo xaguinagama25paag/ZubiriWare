@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#172987"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/backgrounda"
+        android:layout_width="360dp"
+        android:layout_height="680dp"
+        android:background="#000000"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.492" />
+
+    <TextView
+        android:id="@+id/titulua"
+        android:layout_width="119dp"
+        android:layout_height="47dp"
+        android:fontFamily="sans-serif-black"
+        android:rotationX="0"
+        android:rotationY="0"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:text="FASTCALC"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.074" />
+
+    <TextView
+        android:id="@+id/galdera"
+        android:layout_width="388dp"
+        android:layout_height="106dp"
+        android:text="galdera hemen egongo da"
+        android:textAlignment="center"
+        android:textColor="#FB4242"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <EditText
+        android:id="@+id/erantzuna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:digits="0,1,2,3,4,5,6,7,8,9,-,."
+        android:ems="10"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#0FA400"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.553" />
+
+    <TextView
+        android:id="@+id/puntuak"
+        android:layout_width="400dp"
+        android:layout_height="124dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Puntuazioa: 0"
+        android:textAlignment="center"
+        android:textColor="#FFDE00"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.27" />
+
+    <TextView
+        android:id="@+id/denbo"
+        android:layout_width="363dp"
+        android:layout_height="153dp"
+        android:text="START"
+        android:textAlignment="center"
+        android:textColor="#FD4343"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.152" />
+
+    <Button
+        android:id="@+id/bat"
+        android:layout_width="160dp"
+        android:layout_height="78dp"
+        android:text="Denbora erdiztu! (+2 Multi)"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.629" />
+
+    <Button
+        android:id="@+id/bi"
+        android:layout_width="83dp"
+        android:layout_height="78dp"
+        android:text="Ezer (Ezer)"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.629" />
+
+    <Button
+        android:id="@+id/hiru"
+        android:layout_width="168dp"
+        android:layout_height="78dp"
+        android:text="Baloreak haunditu! (+3 Multi)"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.629" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/scoreGifBat"
+        android:layout_width="250dp"
+        android:layout_height="296dp"
+        android:src="@drawable/scorebat"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.662" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/scoreGifBi"
+        android:layout_width="250dp"
+        android:layout_height="296dp"
+        android:src="@drawable/scorebi"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.662" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/scoreGifHiru"
+        android:layout_width="250dp"
+        android:layout_height="296dp"
+        android:src="@drawable/scorehiru"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.662" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/scoreGifLau"
+        android:layout_width="250dp"
+        android:layout_height="296dp"
+        android:src="@drawable/scorelau"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.662" />
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/hasigif"
+        android:layout_width="250dp"
+        android:layout_height="296dp"
+        android:src="@drawable/scorebat"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tutoText"
+        android:layout_width="356dp"
+        android:layout_height="439dp"
+        android:text="Hasten denean, denbora bat izango duzu batuketa, kenketa edo biderketa ausazko baten erantzuna idazteko! \n \n - Erantzuna gaizki badago, jokua bukatzen da, baina ondo badago modifikazio batzuk agertuko dira aukeratzeko, denbora erdizteko,baloreak haundiagoak egiteko edo ezer, lehenengo biak lortzen duzun puntuak bidertu edo hirukoiztuko ditu \n \n Modu zailan denbora gutxiago gehitzen da, baloreak azkarrago geitzen dira eta jokua zure lekuan aukeratzen ditu modifikazioak, gainera beste bi modifikazio berri gehitzen ditu, beste aldaketa estetiko batzuekin lagunduta"
+        android:textColor="#FB4242"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.446" />
+
+    <TextView
+        android:id="@+id/lives"
+        android:layout_width="85dp"
+        android:layout_height="36dp"
+        android:text="❤❤❤"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

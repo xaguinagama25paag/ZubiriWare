@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "69172784167",
+    "project_id": "zubiriware",
+    "storage_bucket": "zubiriware.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69172784167:android:eb8efbca31abea6e39b202",
+        "android_client_info": {
+          "package_name": "com.example.zubiriware"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBY0VQZCNuY1GCnHcaYDNYKOgXCD-sqZgk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
