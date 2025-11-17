@@ -23,8 +23,8 @@
 
     <TextView
         android:id="@+id/scoreaFly"
-        android:layout_width="243dp"
-        android:layout_height="50dp"
+        android:layout_width="237dp"
+        android:layout_height="55dp"
         android:fontFamily="sans-serif-black"
         android:rotationX="0"
         android:rotationY="0"
@@ -36,10 +36,10 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.941" />
+        app:layout_constraintVertical_bias="0.934" />
 
     <TextView
         android:id="@+id/scoreaCalc"
@@ -60,30 +60,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.035" />
 
-    <ImageView
-        android:id="@+id/point"
-        android:layout_width="99dp"
-        android:layout_height="126dp"
-        android:src="@drawable/pointer"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.376" />
+
 
     <ImageView
         android:id="@+id/toFly"
-        android:layout_width="146dp"
-        android:layout_height="176dp"
+        android:layout_width="172dp"
+        android:layout_height="174dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/scorebi" />
+        app:srcCompat="@drawable/fastflycard" />
 
     <ImageView
         android:id="@+id/toBlow"
@@ -100,15 +89,15 @@
 
     <ImageView
         android:id="@+id/toCalc"
-        android:layout_width="173dp"
-        android:layout_height="163dp"
+        android:layout_width="176dp"
+        android:layout_height="172dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/scorebat" />
+        app:srcCompat="@drawable/fastcalccard" />
 
     <Button
         android:id="@+id/botoia"
@@ -117,10 +106,10 @@
         android:text="FastCalc!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintHorizontal_bias="0.128"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.238" />
+        app:layout_constraintVertical_bias="0.212" />
 
     <Button
         android:id="@+id/botoia2"
@@ -129,10 +118,10 @@
         android:text="FastFly!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintHorizontal_bias="0.907"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.742" />
+        app:layout_constraintVertical_bias="0.789" />
 
     <Button
         android:id="@+id/botoiaTest"
@@ -145,5 +134,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.499" />
+    <ImageView
+        android:id="@+id/point"
+        android:layout_width="99dp"
+        android:layout_height="126dp"
+        android:src="@drawable/pointer"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.376" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

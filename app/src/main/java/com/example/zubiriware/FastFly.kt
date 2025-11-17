@@ -6,7 +6,6 @@ import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.MotionEvent
 import android.view.View
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -15,7 +14,6 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import kotlinx.coroutines.DelicateCoroutinesApi
-import kotlinx.coroutines.runBlocking
 import pl.droidsonroids.gif.GifImageView
 import java.util.Timer
 import java.util.TimerTask
@@ -27,11 +25,9 @@ class FastFly : AppCompatActivity(), View.OnTouchListener {
     var dY: Float = 0f
     lateinit var titulo: TextView
 
-    lateinit var berri: Button
     lateinit var scoretext: TextView
     lateinit var mugitu: TextView
     lateinit var hasiergif: GifImageView
-    lateinit var atzeratu: Button
     lateinit var muroa1: ImageView
     lateinit var muroa2: ImageView
     lateinit var muroa3: ImageView
@@ -45,7 +41,6 @@ class FastFly : AppCompatActivity(), View.OnTouchListener {
     private var puntuakCalc = 0
     private var musika: MediaPlayer? = null
     private var ondo: MediaPlayer? = null
-    private var gaizki: MediaPlayer? = null
     val timer: Timer = Timer()
     val timer2: Timer = Timer()
     var puntuakFly: Int =0
@@ -62,8 +57,6 @@ class FastFly : AppCompatActivity(), View.OnTouchListener {
         }
         main = findViewById(R.id.main)
         titulo = findViewById(R.id.titulua)
-        berri = findViewById(R.id.berriro)
-        atzeratu = findViewById(R.id.atzera)
         hasiergif = findViewById(R.id.hasigif)
         scoretext = findViewById(R.id.score)
         muroa1 = findViewById(R.id.muro1)
@@ -71,6 +64,7 @@ class FastFly : AppCompatActivity(), View.OnTouchListener {
         muroa3 = findViewById(R.id.muro3)
         muroa4 = findViewById(R.id.muro4)
         mugitu = findViewById(R.id.mugi)
+
         var params = muroa1.layoutParams as ConstraintLayout.LayoutParams
         params.topMargin += i
 
@@ -88,10 +82,10 @@ class FastFly : AppCompatActivity(), View.OnTouchListener {
         params.rightMargin += i
             params.rightMargin = -500
         muroa4.layoutParams = params
+
         ondo = MediaPlayer.create(this,R.raw.youwin)
-        gaizki = MediaPlayer.create(this,R.raw.hurt)
         musika = MediaPlayer.create(this, R.raw.airwaves)
-        hasiergif.setOnTouchListener(this);
+        hasiergif.setOnTouchListener(this)
         musika?.start()
         musika?.isLooping = true
 
@@ -109,9 +103,8 @@ class FastFly : AppCompatActivity(), View.OnTouchListener {
     val task = object : TimerTask() {
         override fun run() {
 
-          //  muroa1.rotation = (0..359).random().toFloat()
             if (viewsOverlap(muroa1,hasiergif)||viewsOverlap(muroa2,hasiergif)||viewsOverlap(muroa3,hasiergif)||viewsOverlap(muroa4,hasiergif)){
-                kontadorea++;
+                kontadorea++
                 if (kontadorea==2) {
                     musika?.stop()
                     hasiergif.setImageDrawable(getResources().getDrawable(R.drawable.lose, getApplicationContext().getTheme()));
@@ -208,14 +201,6 @@ class FastFly : AppCompatActivity(), View.OnTouchListener {
                     }
 
                 }
-                /* val params2 = muroa2.layoutParams as ConstraintLayout.LayoutParams
-                 params2.topMargin += i-10
-                 if (params2.topMargin >3500){
-                     params2.topMargin = -200
-                     speed++
-                 }
-
-                 muroa2.layoutParams = params2*/
             }
             }
         }
@@ -228,16 +213,6 @@ class FastFly : AppCompatActivity(), View.OnTouchListener {
         startActivity(switchActivityIntent)
     }
 
-    fun sortzen(zenbakia1: Int, zenbakia2: Int, zein: Int): Int = runBlocking {
-        var a = 0
-        when (zein) {
-            0 -> a = zenbakia1 + zenbakia2
-            1 -> a = zenbakia1 - zenbakia2
-            2 -> a = zenbakia1 * zenbakia2
-        }
-        a
-
-    }
     public override fun onTouch(view: View, event: MotionEvent): Boolean {
         when (event.getAction()) {
             MotionEvent.ACTION_DOWN -> {

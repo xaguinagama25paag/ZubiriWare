@@ -21,76 +21,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.377" />
 
-
-    <Button
-        android:id="@+id/berriro"
-        android:layout_width="162dp"
-        android:layout_height="79dp"
-        android:fontFamily="sans-serif-black"
-        android:text="Jokatu berriro?"
-        android:textColor="#FD4343"
-        android:textSize="24sp"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.32" />
-
-
-    <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/scoreGifBat"
-        android:layout_width="250dp"
-        android:layout_height="296dp"
-        android:src="@drawable/scorebat"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.662" />
-
-    <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/scoreGifBi"
-        android:layout_width="250dp"
-        android:layout_height="296dp"
-        android:src="@drawable/scorebi"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.662" />
-
-    <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/scoreGifHiru"
-        android:layout_width="250dp"
-        android:layout_height="296dp"
-        android:src="@drawable/scorehiru"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.662" />
-
-    <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/scoreGifLau"
-        android:layout_width="250dp"
-        android:layout_height="296dp"
-        android:src="@drawable/scorelau"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.662" />
-
     <TextView
         android:id="@+id/titulua"
         android:layout_width="98dp"
@@ -142,22 +72,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.378" />
-
-    <Button
-        android:id="@+id/atzera"
-        android:layout_width="127dp"
-        android:layout_height="66dp"
-        android:fontFamily="sans-serif-black"
-        android:text="Atzera"
-        android:textColor="#FD4343"
-        android:textSize="24sp"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.433"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.818" />
 
     <ImageView
         android:id="@+id/muro1"

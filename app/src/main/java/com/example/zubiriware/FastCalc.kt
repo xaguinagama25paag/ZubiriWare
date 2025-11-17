@@ -67,6 +67,7 @@ class FastCalc : AppCompatActivity() {
             cont.resume(3)
         }
     }
+    @SuppressLint("SetTextI18n")
     @OptIn(DelicateCoroutinesApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
